@@ -16,6 +16,9 @@
 		D12AB2542CD1C8CA00843FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2532CD1C8CA00843FE0 /* Assets.xcassets */; };
 		D12AB2572CD1C8CA00843FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2552CD1C8CA00843FE0 /* LaunchScreen.storyboard */; };
 		D12AB2662CD1C9F800843FE0 /* PowerChocolate.otf in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2642CD1C9F700843FE0 /* PowerChocolate.otf */; };
+		D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35702CD1DD260076967B /* BaseViewController.swift */; };
+		D15B35732CD1DD260076967B /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35712CD1DD260076967B /* MyColors.swift */; };
+		D15B35752CD1F44B0076967B /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35742CD1F44B0076967B /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		D12AB2562CD1C8CA00843FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12AB2582CD1C8CA00843FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12AB2642CD1C9F700843FE0 /* PowerChocolate.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PowerChocolate.otf; sourceTree = "<group>"; };
+		D15B35702CD1DD260076967B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D15B35712CD1DD260076967B /* MyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
+		D15B35742CD1F44B0076967B /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		DC591EF9EF12257AA38C4713 /* Pods-Candy_03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy_03.release.xcconfig"; path = "Target Support Files/Pods-Candy_03/Pods-Candy_03.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,7 @@
 				D12AB2532CD1C8CA00843FE0 /* Assets.xcassets */,
 				D12AB2582CD1C8CA00843FE0 /* Info.plist */,
 				D12AB2622CD1C9F700843FE0 /* Fonts */,
+				D15B356F2CD1DD260076967B /* Containers */,
 				D12AB2612CD1C93A00843FE0 /* CoreData */,
 			);
 			path = Candy_03;
@@ -116,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D12AB2502CD1C8C900843FE0 /* Candy_03.xcdatamodeld */,
+				D15B35742CD1F44B0076967B /* GameManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -126,6 +134,15 @@
 				D12AB2642CD1C9F700843FE0 /* PowerChocolate.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D15B356F2CD1DD260076967B /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				D15B35702CD1DD260076967B /* BaseViewController.swift */,
+				D15B35712CD1DD260076967B /* MyColors.swift */,
+			);
+			path = Containers;
 			sourceTree = "<group>";
 		};
 		E42254C021490BFCBAB07D36 /* Pods */ = {
@@ -253,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */,
+				D15B35732CD1DD260076967B /* MyColors.swift in Sources */,
 				D12AB24C2CD1C8C900843FE0 /* ViewController.swift in Sources */,
+				D15B35752CD1F44B0076967B /* GameManager.swift in Sources */,
 				D12AB2482CD1C8C900843FE0 /* AppDelegate.swift in Sources */,
 				D12AB2522CD1C8C900843FE0 /* Candy_03.xcdatamodeld in Sources */,
 				D12AB24A2CD1C8C900843FE0 /* SceneDelegate.swift in Sources */,
@@ -319,7 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -382,7 +402,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -415,8 +435,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,8 +469,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
