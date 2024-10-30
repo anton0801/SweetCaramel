@@ -22,7 +22,7 @@ struct LevelBackUIData {
     }
 }
 
-class InitialVC: UIViewController {
+class InitialVC: BaseViewController {
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var battleButton: UIButton!
     @IBOutlet weak var lightingsLabel: UILabel!
@@ -40,6 +40,7 @@ class InitialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkRewardStatus()
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePowerShopVCDismissed), name: Notification.Name("PowerShopVCDismissed"), object: nil)
     }
     
     func defineBack() {
@@ -67,13 +68,25 @@ class InitialVC: UIViewController {
         }
     }
     
+    @objc func handlePowerShopVCDismissed() {
+        GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
+        let lightings = GameManager.shared.getValue(key: "lighting") as! Int
+        lightingsLabel.text = "\(lightings)/100"
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
         defineBack()
-        GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
         startRewardTimer()
         rewardBtn.isUserInteractionEnabled = true
+        GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
+        let lightings = GameManager.shared.getValue(key: "lighting") as! Int
+        lightingsLabel.text = "\(lightings)/100"
     }
     
     func disableRewardButton() {
@@ -145,12 +158,11 @@ class InitialVC: UIViewController {
             print("Coins are successfully taken for today")
             // It will change later on
             UserDefaults.standard.set(Date(), forKey: "lastRewardTime")
-            GameManager.shared.updateCoins(coinsToAdd: 30)
+            GameManager.shared.increasePowers(coinsToAdd: 30, key: "coin")
             disableRewardButton()
-//            view.addSubview(dailyView)
-//            dailyView.snp.makeConstraints { make in
-//                make.edges.equalToSuperview()
-//            }
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DailyGiftVC") as! DailyGiftVC
+            vc.modalPresentationStyle = .overCurrentContext
+            present(vc, animated: true)
             GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
         } else {
             // Reward is unavailable
@@ -172,14 +184,23 @@ class InitialVC: UIViewController {
         }
     }
     @IBAction func menuPressed(_ sender: UIButton) {
+        
     }
     @IBAction func plusPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ExchangeVC") as! ExchangeVC
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true)
     }
     @IBAction func shopPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PowerShopVC") as! PowerShopVC
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true)
     }
     @IBAction func levelsPressed(_ sender: UIButton) {
+        print("Levels got pressed")
     }
     @IBAction func battleButtonPressed(_ sender: UIButton) {
+        // here i should go to the main game scene
     }
 }
 

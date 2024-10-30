@@ -12,4 +12,9 @@ class ExitVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func yesPressed(_ sender: UIButton) {
+    }
+    @IBAction func noPressed(_ sender: UIButton) {
+    }
+    
 }

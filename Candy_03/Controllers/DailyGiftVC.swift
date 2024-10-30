@@ -7,10 +7,13 @@
 
 import UIKit
 
-class DailyGiftVC: UIViewController {
+class DailyGiftVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    @IBAction func takePressed(_ sender: UIButton) {
+        dismiss(animated: true)
     }
 }

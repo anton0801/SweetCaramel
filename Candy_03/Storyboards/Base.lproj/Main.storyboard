@@ -50,9 +50,9 @@
                                         <rect key="frame" x="3" y="0.0" width="149.33333333333334" height="70"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3w-Sk-PXl">
-                                        <rect key="frame" x="50.333333333333371" y="17.000000000000004" width="70" height="33.333333333333343"/>
+                                        <rect key="frame" x="35.333333333333371" y="17.000000000000004" width="110" height="33.333333333333343"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="yRe-nh-sQP"/>
+                                            <constraint firstAttribute="width" constant="110" id="yRe-nh-sQP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PowerChocolate" family="Power Chocolate" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                     <constraint firstItem="rkU-kS-3rK" firstAttribute="leading" secondItem="LcI-9C-e5B" secondAttribute="leading" constant="3" id="XfY-Zm-BDL"/>
                                     <constraint firstItem="P3w-Sk-PXl" firstAttribute="top" secondItem="LcI-9C-e5B" secondAttribute="top" constant="17" id="hqG-yE-NOb"/>
                                     <constraint firstAttribute="trailing" secondItem="rkU-kS-3rK" secondAttribute="trailing" constant="3" id="kJH-38-sZT"/>
-                                    <constraint firstAttribute="trailing" secondItem="P3w-Sk-PXl" secondAttribute="trailing" constant="35" id="n33-rS-679"/>
+                                    <constraint firstAttribute="trailing" secondItem="P3w-Sk-PXl" secondAttribute="trailing" constant="10" id="n33-rS-679"/>
                                     <constraint firstAttribute="width" secondItem="LcI-9C-e5B" secondAttribute="height" multiplier="113:51" id="ux5-7R-cpB"/>
                                 </constraints>
                             </view>
@@ -112,7 +112,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-VU-vp6">
-                                <rect key="frame" x="63.999999999999993" y="49" width="74.333333333333314" height="70"/>
+                                <rect key="frame" x="63.999999999999993" y="49" width="74.333333333333286" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="pj1-i6-NFM"/>
                                     <constraint firstAttribute="width" secondItem="Gc4-VU-vp6" secondAttribute="height" multiplier="102:96" id="sfy-9g-e4f"/>
@@ -389,7 +389,7 @@
                                                                         <constraint firstAttribute="width" secondItem="Uku-Zl-BKo" secondAttribute="height" multiplier="1:1" id="wEa-xb-ggA"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50y-te-tve">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50y-te-tve">
                                                                     <rect key="frame" x="57.333333333333371" y="0.0" width="164" height="57.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="PowerChocolate" family="Power Chocolate" pointSize="26"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -406,7 +406,7 @@
                                                                         <constraint firstAttribute="width" secondItem="Rnn-MM-e1I" secondAttribute="height" multiplier="1:1" id="06i-Xz-fuZ"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zh-Qp-4Z0">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zh-Qp-4Z0">
                                                                     <rect key="frame" x="57.333333333333371" y="0.0" width="164" height="57.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="PowerChocolate" family="Power Chocolate" pointSize="26"/>
                                                                     <color key="textColor" red="0.0" green="1" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
@@ -440,6 +440,9 @@
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="takeButton"/>
+                                            <connections>
+                                                <action selector="takePressed:" destination="mZy-LD-S0G" eventType="touchUpInside" id="L3q-oA-ihh"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -521,6 +524,9 @@
                                             <state key="normal" backgroundImage="xButton">
                                                 <color key="titleColor" red="0.65098039220000004" green="0.0039215686269999999" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="backPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="mTD-QG-BMf"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopText" translatesAutoresizingMaskIntoConstraints="NO" id="nlh-a3-s4w">
                                             <rect key="frame" x="386" y="10" width="160" height="55"/>
@@ -540,6 +546,9 @@
                                             <state key="normal" backgroundImage="infoButton">
                                                 <color key="titleColor" red="0.65098039220000004" green="0.0039215686269999999" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="infoPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="hbR-Cc-b9Y"/>
+                                            </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-ra-2Ra">
                                             <rect key="frame" x="247.66666666666663" y="10" width="128.33333333333337" height="55"/>
@@ -592,7 +601,7 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="plusButton"/>
                                                     <connections>
-                                                        <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGe-8b-TEh"/>
+                                                        <action selector="plusPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="f48-g2-yI9"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -660,6 +669,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="unselectedPower"/>
+                                                        <connections>
+                                                            <action selector="xPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="70c-3Z-8tJ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlp-KY-jFM">
                                                         <rect key="frame" x="167.33333333333334" y="57.333333333333314" width="27.666666666666657" height="33.333333333333343"/>
@@ -688,7 +700,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GD8-Dy-vom">
                                                 <rect key="frame" x="0.0" y="189" width="264.66666666666669" height="52.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl4-mE-DMf">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl4-mE-DMf">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Tl4-mE-DMf" secondAttribute="height" multiplier="49:23" id="HKu-7w-jaB"/>
@@ -698,8 +710,11 @@
                                                         <state key="normal" backgroundImage="buy30">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByCoinBtnsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="fRE-eg-1jF"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js4-8o-FKL">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js4-8o-FKL">
                                                         <rect key="frame" x="153" y="0.0" width="111.66666666666669" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="js4-8o-FKL" secondAttribute="height" multiplier="49:23" id="CFg-Em-Wmf"/>
@@ -709,6 +724,9 @@
                                                         <state key="normal" backgroundImage="buyDiamont">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByDiamondsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="a96-Jg-97P"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -759,7 +777,7 @@
                                                             <constraint firstAttribute="width" secondItem="viR-4g-3sh" secondAttribute="height" multiplier="1:1" id="BLk-Iv-zcT"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axv-h4-nH5">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axv-h4-nH5">
                                                         <rect key="frame" x="18.333333333333314" y="56.333333333333314" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="4SI-XI-G63"/>
@@ -767,8 +785,11 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="unselectedPower"/>
+                                                        <connections>
+                                                            <action selector="xPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="lrL-V5-DW5"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-Iz-PqX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-Iz-PqX">
                                                         <rect key="frame" x="167.33333333333331" y="57.333333333333314" width="27.666666666666657" height="33.333333333333343"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="33.329999999999998" id="wYD-LF-UVK"/>
@@ -805,6 +826,9 @@
                                                         <state key="normal" backgroundImage="buy30">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByCoinBtnsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="kPe-jb-CKy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-Pb-jIX">
                                                         <rect key="frame" x="153" y="0.0" width="111.66666666666669" height="52.333333333333336"/>
@@ -816,6 +840,9 @@
                                                         <state key="normal" backgroundImage="buyDiamont">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByDiamondsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="qde-3a-yez"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -866,7 +893,7 @@
                                                             <constraint firstAttribute="width" secondItem="wrg-Dc-kq3" secondAttribute="height" multiplier="1:1" id="eXo-GJ-d38"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9b-kv-OJe">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9b-kv-OJe">
                                                         <rect key="frame" x="18.333333333333258" y="56.333333333333314" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="bFw-2h-TDZ"/>
@@ -874,8 +901,11 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="unselectedPower"/>
+                                                        <connections>
+                                                            <action selector="xPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="62f-II-Zvh"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-bY-x58">
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-bY-x58">
                                                         <rect key="frame" x="167.33333333333326" y="57.333333333333314" width="27.666666666666657" height="33.333333333333343"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="33.329999999999998" id="IXK-Ts-1m8"/>
@@ -902,7 +932,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD1-Cq-DNn">
                                                 <rect key="frame" x="0.0" y="189" width="264.66666666666669" height="52.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drx-Vf-tQW">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drx-Vf-tQW">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="drx-Vf-tQW" secondAttribute="height" multiplier="49:23" id="iYF-II-IHI"/>
@@ -912,8 +942,11 @@
                                                         <state key="normal" backgroundImage="buy30">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByCoinBtnsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="TyM-lL-ag6"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5Z-9p-2YK">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5Z-9p-2YK">
                                                         <rect key="frame" x="153" y="0.0" width="111.66666666666669" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="z5Z-9p-2YK" secondAttribute="height" multiplier="49:23" id="IXv-Bq-zYf"/>
@@ -923,6 +956,9 @@
                                                         <state key="normal" backgroundImage="buyDiamont">
                                                             <color key="titleColor" red="0.41568627450000001" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buyByDiamondsPressed:" destination="FTZ-61-AJm" eventType="touchUpInside" id="NkO-HY-XZ0"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -967,6 +1003,16 @@
                             <constraint firstItem="rd2-xJ-2tI" firstAttribute="top" secondItem="Yp2-f7-0fA" secondAttribute="top" id="f1k-bI-Lym"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="4db-Uf-5U2" id="6zP-57-gxv"/>
+                        <outlet property="diamondLabel" destination="cNt-b8-d1h" id="fDY-gJ-RVR"/>
+                        <outletCollection property="xButtonOutlets" destination="Yd1-PM-cMS" collectionClass="NSMutableArray" id="Ctf-GL-KqH"/>
+                        <outletCollection property="amountLabels" destination="Tlp-KY-jFM" collectionClass="NSMutableArray" id="3M4-lh-7Ap"/>
+                        <outletCollection property="amountLabels" destination="Agm-bY-x58" collectionClass="NSMutableArray" id="oJ9-PY-htg"/>
+                        <outletCollection property="amountLabels" destination="Sr0-Iz-PqX" collectionClass="NSMutableArray" id="NHB-Rf-SiW"/>
+                        <outletCollection property="xButtonOutlets" destination="axv-h4-nH5" collectionClass="NSMutableArray" id="mBs-si-NOS"/>
+                        <outletCollection property="xButtonOutlets" destination="A9b-kv-OJe" collectionClass="NSMutableArray" id="HJL-aE-g7l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn1-kg-99n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -997,6 +1043,9 @@
                                             <state key="normal" backgroundImage="xButton">
                                                 <color key="titleColor" red="0.65098039220000004" green="0.0039215686269999999" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="backPressed:" destination="zLX-VP-8kw" eventType="touchUpInside" id="Bn1-m2-Pb4"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoText" translatesAutoresizingMaskIntoConstraints="NO" id="4ov-sd-0zW">
                                             <rect key="frame" x="361" y="10" width="210" height="60"/>
@@ -1234,6 +1283,9 @@
                                             <state key="normal" backgroundImage="xButton">
                                                 <color key="titleColor" red="0.65098039220000004" green="0.0039215686269999999" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="backPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="bhF-NR-e1V"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopText" translatesAutoresizingMaskIntoConstraints="NO" id="ohX-OP-R4d">
                                             <rect key="frame" x="386" y="10" width="160" height="55"/>
@@ -1253,6 +1305,9 @@
                                             <state key="normal" backgroundImage="infoButton">
                                                 <color key="titleColor" red="0.65098039220000004" green="0.0039215686269999999" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="infoPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="JaQ-Ja-skg"/>
+                                            </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boS-pk-e7P">
                                             <rect key="frame" x="247.66666666666663" y="10" width="128.33333333333337" height="55"/>
@@ -1305,7 +1360,7 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="plusButton"/>
                                                     <connections>
-                                                        <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJd-Dg-Dwe"/>
+                                                        <action selector="plusPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="77Y-Sf-wCl"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1468,7 +1523,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsl-3N-kmA">
                                                 <rect key="frame" x="0.0" y="189" width="264.66666666666669" height="52.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-KR-Qcc">
+                                                    <button opaque="NO" tag="599" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-KR-Qcc">
                                                         <rect key="frame" x="76.666666666666657" y="0.0" width="111.33333333333334" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="6Nf-KR-Qcc" secondAttribute="height" multiplier="49:23" id="JXc-ZN-sPE"/>
@@ -1478,6 +1533,9 @@
                                                         <state key="normal" title="5,99 $" backgroundImage="inAppButtonBack">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="purchaseBtnPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="rCK-ZX-jdF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1628,7 +1686,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGt-W6-8kp">
                                                 <rect key="frame" x="0.0" y="189" width="264.66666666666669" height="52.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-br-HqH">
+                                                    <button opaque="NO" tag="799" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-br-HqH">
                                                         <rect key="frame" x="76.666666666666629" y="0.0" width="111.33333333333331" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bPV-br-HqH" secondAttribute="height" multiplier="49:23" id="COo-XB-ue0"/>
@@ -1638,6 +1696,9 @@
                                                         <state key="normal" title="7,99 $" backgroundImage="inAppButtonBack">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="purchaseBtnPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="tfm-RL-sR5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1788,7 +1849,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-1h-Jd6">
                                                 <rect key="frame" x="0.0" y="189" width="264.66666666666669" height="52.333333333333343"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkH-qN-ihr">
+                                                    <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkH-qN-ihr">
                                                         <rect key="frame" x="76.666666666666629" y="0.0" width="111.33333333333331" height="52.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="AkH-qN-ihr" secondAttribute="height" multiplier="49:23" id="gaB-HT-A2y"/>
@@ -1798,6 +1859,9 @@
                                                         <state key="normal" title="9,99 $" backgroundImage="inAppButtonBack">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="purchaseBtnPressed:" destination="f7q-Pt-iBw" eventType="touchUpInside" id="Anu-sC-Sc7"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1839,6 +1903,10 @@
                             <constraint firstItem="UaB-LT-KNT" firstAttribute="top" secondItem="LJL-2p-Fem" secondAttribute="top" id="bSK-Tv-YLh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="G1s-PL-XnF" id="VA3-ro-dJu"/>
+                        <outlet property="diamondLabel" destination="4Gp-OT-MYb" id="o5Z-wG-ckZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qm5-gj-BNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1910,6 +1978,9 @@
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="okeyBtn"/>
+                                            <connections>
+                                                <action selector="okeyPressed:" destination="aa8-7c-3C8" eventType="touchUpInside" id="1Vs-7d-xeU"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VICTORY!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDK-iL-Xll">
                                             <rect key="frame" x="349" y="5" width="234" height="65"/>
@@ -1962,7 +2033,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="plusButton"/>
                                                 <connections>
-                                                    <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiG-vG-xtd"/>
+                                                    <action selector="plusPressed:" destination="aa8-7c-3C8" eventType="touchUpInside" id="Oy4-Sc-0sH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2017,6 +2088,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="menuBttn"/>
+                                <connections>
+                                    <action selector="menuPressed:" destination="aa8-7c-3C8" eventType="touchUpInside" id="EH8-65-O7Z"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winBoyImage" translatesAutoresizingMaskIntoConstraints="NO" id="L0v-tv-6cr">
                                 <rect key="frame" x="648.33333333333337" y="110" width="234.66666666666663" height="320"/>
@@ -2041,6 +2115,10 @@
                             <constraint firstItem="L0v-tv-6cr" firstAttribute="top" secondItem="lqu-XH-zcX" secondAttribute="top" constant="110" id="zdx-h1-aZM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="8hD-vb-C3x" id="bia-6y-Cql"/>
+                        <outlet property="diamondLabel" destination="Xkg-pL-MMS" id="9y1-wr-gYq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xr-Rr-Xmo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2093,8 +2171,26 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightingBack" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-26-Rrb">
+                                                    <rect key="frame" x="121" y="0.0" width="100" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="8ya-Nl-Qd9"/>
+                                                        <constraint firstAttribute="height" constant="50" id="G8F-oW-YJ7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOR-Vm-KiG">
+                                                    <rect key="frame" x="145" y="12" width="70" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="JRk-GP-FC1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="PowerChocolate" family="Power Chocolate" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="SOR-Vm-KiG" firstAttribute="top" secondItem="odN-gO-94v" secondAttribute="top" constant="12" id="01s-In-xUb"/>
+                                                <constraint firstItem="Hdt-26-Rrb" firstAttribute="centerX" secondItem="odN-gO-94v" secondAttribute="centerX" id="38j-B4-zMT"/>
                                                 <constraint firstItem="eRt-96-MNr" firstAttribute="centerX" secondItem="odN-gO-94v" secondAttribute="centerX" id="DYU-a5-5wO"/>
                                                 <constraint firstItem="eRt-96-MNr" firstAttribute="centerY" secondItem="odN-gO-94v" secondAttribute="centerY" id="GN0-pc-SVe"/>
                                                 <constraint firstItem="PFH-D5-Qhr" firstAttribute="leading" secondItem="odN-gO-94v" secondAttribute="leading" id="URM-wR-bBI"/>
@@ -2102,6 +2198,8 @@
                                                 <constraint firstAttribute="bottom" secondItem="PFH-D5-Qhr" secondAttribute="bottom" id="btO-Tw-arH"/>
                                                 <constraint firstAttribute="trailing" secondItem="PFH-D5-Qhr" secondAttribute="trailing" id="d2N-bD-rPG"/>
                                                 <constraint firstAttribute="width" secondItem="odN-gO-94v" secondAttribute="height" multiplier="296:205" id="ggk-ao-fJv"/>
+                                                <constraint firstItem="Hdt-26-Rrb" firstAttribute="top" secondItem="odN-gO-94v" secondAttribute="top" id="oAu-zS-rxg"/>
+                                                <constraint firstItem="SOR-Vm-KiG" firstAttribute="centerX" secondItem="odN-gO-94v" secondAttribute="centerX" constant="9" id="yrq-f0-p5R"/>
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hl-Xb-daa">
@@ -2112,6 +2210,9 @@
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="loseTryImage"/>
+                                            <connections>
+                                                <action selector="tryAgainPressed:" destination="k0I-TB-c9l" eventType="touchUpInside" id="vEo-yc-AX1"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOSE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-zl-EiR">
                                             <rect key="frame" x="397" y="5" width="138.33333333333337" height="65"/>
@@ -2164,7 +2265,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="plusButton"/>
                                                 <connections>
-                                                    <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zk8-eb-w07"/>
+                                                    <action selector="plusPressed:" destination="k0I-TB-c9l" eventType="touchUpInside" id="g5x-iH-BPx"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2219,6 +2320,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="menuBttn"/>
+                                <connections>
+                                    <action selector="menuPressed:" destination="k0I-TB-c9l" eventType="touchUpInside" id="5Fg-vg-KJB"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loseBoyImage" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-wB-MZW">
                                 <rect key="frame" x="48.999999999999986" y="110" width="234.66666666666663" height="320"/>
@@ -2243,6 +2347,11 @@
                             <constraint firstItem="wPy-oj-kS1" firstAttribute="top" secondItem="1qe-ea-Xm8" secondAttribute="top" constant="40" id="n9h-Sz-URs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="akX-95-cLz" id="ETF-UU-EWi"/>
+                        <outlet property="diamondLabel" destination="Ztb-1E-PcD" id="tfe-D4-Ael"/>
+                        <outlet property="lightingsLabel" destination="SOR-Vm-KiG" id="Ecs-cu-C7K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eF-L6-MMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2281,6 +2390,9 @@
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="noBtn"/>
+                                                    <connections>
+                                                        <action selector="noPressed:" destination="IDR-31-dOC" eventType="touchUpInside" id="0iO-j3-Bt9"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-VV-ruJ">
                                                     <rect key="frame" x="158.66666666666669" y="0.0" width="118.66666666666669" height="50"/>
@@ -2290,6 +2402,9 @@
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="yesBtn"/>
+                                                    <connections>
+                                                        <action selector="yesPressed:" destination="IDR-31-dOC" eventType="touchUpInside" id="bGq-NH-PSG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

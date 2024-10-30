@@ -14,12 +14,12 @@ class GameManager {
     private let timeFreeze = "sugarSlowdown"
     private let sweetBoost = "blastCandy"
     private let powerBlast = "sweetMultiplier"
-    private let coins = "coins"
-    private let diamonts = "diamonts"
+    private let coins = "coin"
+    private let diamonts = "diamond"
+    private let lightings = "lighting"
     private let level = "level"
     private let lastRewardTime = "lastRewardTime"
     private let currentPower = "currentPower"
-    private let firstEnterMessage = "firstEnterMessage"
     
     private init() {}
     
@@ -58,8 +58,8 @@ class GameManager {
             defaults.setValue(0, forKey: currentPower)
         }
         
-        if defaults.value(forKey: firstEnterMessage) == nil {
-            defaults.setValue(true, forKey: firstEnterMessage)
+        if defaults.value(forKey: lightings) == nil {
+            defaults.setValue(100, forKey: lightings)
         }
     }
     
@@ -68,16 +68,16 @@ class GameManager {
         defaults.set(value, forKey: key)
     }
     
-    func updateCoins(coinsToAdd: Int) {
+    func increasePowers(coinsToAdd: Int, key: String) {
         let defaults = UserDefaults.standard
-        let currentCoins = defaults.value(forKey: coins) as! Int
-        updateValue(forKey: coins, value: currentCoins + coinsToAdd)
+        let currentCoins = defaults.value(forKey: key) as! Int
+        updateValue(forKey: key, value: currentCoins + coinsToAdd)
     }
     
-    func minusCoins(coinsToMinus: Int) {
+    func minusPower(coinsToMinus: Int, key: String) {
         let defaults = UserDefaults.standard
-        let currentCoins = defaults.value(forKey: coins) as! Int
-        updateValue(forKey: coins, value: currentCoins - coinsToMinus)
+        let currentCoins = defaults.value(forKey: key) as! Int
+        updateValue(forKey: key, value: currentCoins - coinsToMinus)
     }
     
     func levelUp() {
