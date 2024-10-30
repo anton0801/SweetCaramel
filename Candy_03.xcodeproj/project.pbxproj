@@ -10,12 +10,19 @@
 		2D863BA5F032D7279E4F3FC9 /* Pods_Candy_03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8058212D9DC67A8C55123BC /* Pods_Candy_03.framework */; };
 		D12AB2482CD1C8C900843FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB2472CD1C8C900843FE0 /* AppDelegate.swift */; };
 		D12AB24A2CD1C8C900843FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB2492CD1C8C900843FE0 /* SceneDelegate.swift */; };
-		D12AB24C2CD1C8C900843FE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB24B2CD1C8C900843FE0 /* ViewController.swift */; };
+		D12AB24C2CD1C8C900843FE0 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB24B2CD1C8C900843FE0 /* InitialVC.swift */; };
 		D12AB24F2CD1C8C900843FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12AB24D2CD1C8C900843FE0 /* Main.storyboard */; };
 		D12AB2522CD1C8C900843FE0 /* Candy_03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D12AB2502CD1C8C900843FE0 /* Candy_03.xcdatamodeld */; };
 		D12AB2542CD1C8CA00843FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2532CD1C8CA00843FE0 /* Assets.xcassets */; };
 		D12AB2572CD1C8CA00843FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2552CD1C8CA00843FE0 /* LaunchScreen.storyboard */; };
 		D12AB2662CD1C9F800843FE0 /* PowerChocolate.otf in Resources */ = {isa = PBXBuildFile; fileRef = D12AB2642CD1C9F700843FE0 /* PowerChocolate.otf */; };
+		D158CC8D2CD25DF700DA2CCC /* DailyGiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC8C2CD25DF700DA2CCC /* DailyGiftVC.swift */; };
+		D158CC8F2CD25E1700DA2CCC /* PowerShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC8E2CD25E1700DA2CCC /* PowerShopVC.swift */; };
+		D158CC912CD25E3900DA2CCC /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC902CD25E3900DA2CCC /* InfoVC.swift */; };
+		D158CC932CD25E8200DA2CCC /* ExchangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC922CD25E8200DA2CCC /* ExchangeVC.swift */; };
+		D158CC952CD25EA700DA2CCC /* VictoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC942CD25EA700DA2CCC /* VictoryVC.swift */; };
+		D158CC972CD25EC100DA2CCC /* LoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC962CD25EC100DA2CCC /* LoseVC.swift */; };
+		D158CC992CD25ED800DA2CCC /* ExitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC982CD25ED800DA2CCC /* ExitVC.swift */; };
 		D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35702CD1DD260076967B /* BaseViewController.swift */; };
 		D15B35732CD1DD260076967B /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35712CD1DD260076967B /* MyColors.swift */; };
 		D15B35752CD1F44B0076967B /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35742CD1F44B0076967B /* GameManager.swift */; };
@@ -27,13 +34,20 @@
 		D12AB2442CD1C8C900843FE0 /* Candy_03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy_03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12AB2472CD1C8C900843FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12AB2492CD1C8C900843FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D12AB24B2CD1C8C900843FE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D12AB24B2CD1C8C900843FE0 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		D12AB24E2CD1C8C900843FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D12AB2512CD1C8C900843FE0 /* Candy_03.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Candy_03.xcdatamodel; sourceTree = "<group>"; };
 		D12AB2532CD1C8CA00843FE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D12AB2562CD1C8CA00843FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12AB2582CD1C8CA00843FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12AB2642CD1C9F700843FE0 /* PowerChocolate.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PowerChocolate.otf; sourceTree = "<group>"; };
+		D158CC8C2CD25DF700DA2CCC /* DailyGiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGiftVC.swift; sourceTree = "<group>"; };
+		D158CC8E2CD25E1700DA2CCC /* PowerShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerShopVC.swift; sourceTree = "<group>"; };
+		D158CC902CD25E3900DA2CCC /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		D158CC922CD25E8200DA2CCC /* ExchangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeVC.swift; sourceTree = "<group>"; };
+		D158CC942CD25EA700DA2CCC /* VictoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryVC.swift; sourceTree = "<group>"; };
+		D158CC962CD25EC100DA2CCC /* LoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseVC.swift; sourceTree = "<group>"; };
+		D158CC982CD25ED800DA2CCC /* ExitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitVC.swift; sourceTree = "<group>"; };
 		D15B35702CD1DD260076967B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D15B35712CD1DD260076967B /* MyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		D15B35742CD1F44B0076967B /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
@@ -114,7 +128,14 @@
 		D12AB2602CD1C93000843FE0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D12AB24B2CD1C8C900843FE0 /* ViewController.swift */,
+				D12AB24B2CD1C8C900843FE0 /* InitialVC.swift */,
+				D158CC8C2CD25DF700DA2CCC /* DailyGiftVC.swift */,
+				D158CC8E2CD25E1700DA2CCC /* PowerShopVC.swift */,
+				D158CC902CD25E3900DA2CCC /* InfoVC.swift */,
+				D158CC922CD25E8200DA2CCC /* ExchangeVC.swift */,
+				D158CC942CD25EA700DA2CCC /* VictoryVC.swift */,
+				D158CC962CD25EC100DA2CCC /* LoseVC.swift */,
+				D158CC982CD25ED800DA2CCC /* ExitVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,11 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D158CC972CD25EC100DA2CCC /* LoseVC.swift in Sources */,
+				D158CC932CD25E8200DA2CCC /* ExchangeVC.swift in Sources */,
 				D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */,
 				D15B35732CD1DD260076967B /* MyColors.swift in Sources */,
-				D12AB24C2CD1C8C900843FE0 /* ViewController.swift in Sources */,
+				D158CC8D2CD25DF700DA2CCC /* DailyGiftVC.swift in Sources */,
+				D12AB24C2CD1C8C900843FE0 /* InitialVC.swift in Sources */,
+				D158CC992CD25ED800DA2CCC /* ExitVC.swift in Sources */,
+				D158CC912CD25E3900DA2CCC /* InfoVC.swift in Sources */,
 				D15B35752CD1F44B0076967B /* GameManager.swift in Sources */,
+				D158CC952CD25EA700DA2CCC /* VictoryVC.swift in Sources */,
 				D12AB2482CD1C8C900843FE0 /* AppDelegate.swift in Sources */,
+				D158CC8F2CD25E1700DA2CCC /* PowerShopVC.swift in Sources */,
 				D12AB2522CD1C8C900843FE0 /* Candy_03.xcdatamodeld in Sources */,
 				D12AB24A2CD1C8C900843FE0 /* SceneDelegate.swift in Sources */,
 			);
