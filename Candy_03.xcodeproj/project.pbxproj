@@ -23,6 +23,7 @@
 		D158CC952CD25EA700DA2CCC /* VictoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC942CD25EA700DA2CCC /* VictoryVC.swift */; };
 		D158CC972CD25EC100DA2CCC /* LoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC962CD25EC100DA2CCC /* LoseVC.swift */; };
 		D158CC992CD25ED800DA2CCC /* ExitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CC982CD25ED800DA2CCC /* ExitVC.swift */; };
+		D158CCD62CD4A69800DA2CCC /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158CCD52CD4A69800DA2CCC /* MainGameVC.swift */; };
 		D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35702CD1DD260076967B /* BaseViewController.swift */; };
 		D15B35732CD1DD260076967B /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35712CD1DD260076967B /* MyColors.swift */; };
 		D15B35752CD1F44B0076967B /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35742CD1F44B0076967B /* GameManager.swift */; };
@@ -48,6 +49,7 @@
 		D158CC942CD25EA700DA2CCC /* VictoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryVC.swift; sourceTree = "<group>"; };
 		D158CC962CD25EC100DA2CCC /* LoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseVC.swift; sourceTree = "<group>"; };
 		D158CC982CD25ED800DA2CCC /* ExitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitVC.swift; sourceTree = "<group>"; };
+		D158CCD52CD4A69800DA2CCC /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
 		D15B35702CD1DD260076967B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D15B35712CD1DD260076967B /* MyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		D15B35742CD1F44B0076967B /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				D158CC942CD25EA700DA2CCC /* VictoryVC.swift */,
 				D158CC962CD25EC100DA2CCC /* LoseVC.swift */,
 				D158CC982CD25ED800DA2CCC /* ExitVC.swift */,
+				D158CCD52CD4A69800DA2CCC /* MainGameVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				D158CC932CD25E8200DA2CCC /* ExchangeVC.swift in Sources */,
 				D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */,
 				D15B35732CD1DD260076967B /* MyColors.swift in Sources */,
+				D158CCD62CD4A69800DA2CCC /* MainGameVC.swift in Sources */,
 				D158CC8D2CD25DF700DA2CCC /* DailyGiftVC.swift in Sources */,
 				D12AB24C2CD1C8C900843FE0 /* InitialVC.swift in Sources */,
 				D158CC992CD25ED800DA2CCC /* ExitVC.swift in Sources */,

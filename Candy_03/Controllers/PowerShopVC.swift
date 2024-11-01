@@ -62,16 +62,10 @@ class PowerShopVC: BaseViewController {
     @IBAction func infoPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "InfoVC") as! InfoVC
         vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true)
+        push(vc: vc)
     }
     @IBAction func backPressed(_ sender: UIButton) {
         NotificationCenter.default.post(name: Notification.Name("PowerShopVCDismissed"), object: nil)
-        dismiss(animated: true)
-    }
-    
-    @IBAction func plusPressed(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ExchangeVC") as! ExchangeVC
-        vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true)
+        popViewController()
     }
 }

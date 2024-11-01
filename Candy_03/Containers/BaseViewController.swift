@@ -136,6 +136,17 @@ class BaseViewController: UIViewController {
         popViewController()
     }
     
+    func pushWithOverlayEffect(_ viewController: UIViewController) {
+        // Create a fade transition
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = .fade
+        navigationController?.view.layer.add(transition, forKey: kCATransition)
+        
+        // Push the view controller
+        navigationController?.pushViewController(viewController, animated: false)
+    }
+    
     func setTransculantNavBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()

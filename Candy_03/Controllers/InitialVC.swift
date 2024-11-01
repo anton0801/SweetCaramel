@@ -158,11 +158,13 @@ class InitialVC: BaseViewController {
             print("Coins are successfully taken for today")
             // It will change later on
             UserDefaults.standard.set(Date(), forKey: "lastRewardTime")
-            GameManager.shared.increasePowers(coinsToAdd: 30, key: "coin")
+            GameManager.shared.increasePowers(coinsToAdd: 25, key: "coin")
+            GameManager.shared.increasePowers(coinsToAdd: 2, key: "diamond")
+            GameManager.shared.increasePowers(coinsToAdd: 30, key: "lighting")
             disableRewardButton()
             let vc = storyboard?.instantiateViewController(withIdentifier: "DailyGiftVC") as! DailyGiftVC
             vc.modalPresentationStyle = .overCurrentContext
-            present(vc, animated: true)
+            push(vc: vc)
             GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
         } else {
             // Reward is unavailable
@@ -186,21 +188,24 @@ class InitialVC: BaseViewController {
     @IBAction func menuPressed(_ sender: UIButton) {
         
     }
-    @IBAction func plusPressed(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ExchangeVC") as! ExchangeVC
-        vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true)
-    }
     @IBAction func shopPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PowerShopVC") as! PowerShopVC
         vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true)
+        push(vc: vc)
     }
     @IBAction func levelsPressed(_ sender: UIButton) {
         print("Levels got pressed")
     }
     @IBAction func battleButtonPressed(_ sender: UIButton) {
         // here i should go to the main game scene
+        if GameManager.shared.getValue(key: "lighting") as! Int >= 30 {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MainGameVC") as! MainGameVC
+        vc.levelNumber = index
+        push(vc: vc)
+        } else {
+            showAlertMessage(title: "Insufficient Coins", message: "You don't have enough coins to retry game")
+        }
+
     }
 }
 

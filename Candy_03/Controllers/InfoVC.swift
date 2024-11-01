@@ -13,6 +13,6 @@ class InfoVC: BaseViewController {
         super.viewDidLoad()
     }
     @IBAction func backPressed(_ sender: UIButton) {
-        dismiss(animated: true)
+        popViewController()
     }
 }

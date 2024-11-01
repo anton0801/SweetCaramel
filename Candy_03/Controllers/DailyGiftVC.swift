@@ -14,6 +14,7 @@ class DailyGiftVC: BaseViewController {
     }
     
     @IBAction func takePressed(_ sender: UIButton) {
-        dismiss(animated: true)
+        NotificationCenter.default.post(name: Notification.Name("PowerShopVCDismissed"), object: nil)
+        popViewController()
     }
 }
