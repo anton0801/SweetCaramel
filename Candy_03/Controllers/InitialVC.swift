@@ -77,7 +77,6 @@ class InitialVC: BaseViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
@@ -197,7 +196,6 @@ class InitialVC: BaseViewController {
         print("Levels got pressed")
     }
     @IBAction func battleButtonPressed(_ sender: UIButton) {
-        // here i should go to the main game scene
         if GameManager.shared.getValue(key: "lighting") as! Int >= 30 {
         let vc = storyboard?.instantiateViewController(withIdentifier: "MainGameVC") as! MainGameVC
         vc.levelNumber = index
@@ -205,7 +203,6 @@ class InitialVC: BaseViewController {
         } else {
             showAlertMessage(title: "Insufficient Coins", message: "You don't have enough coins to retry game")
         }
-
     }
 }
 
