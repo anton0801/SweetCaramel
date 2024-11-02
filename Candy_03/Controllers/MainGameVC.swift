@@ -2,7 +2,7 @@
 //  MainGameVC.swift
 //  Candy_03
 //
-//  Created by Behruz Norov on 01/11/24.
+// Created by . on 01/11/24.
 //
 
 import UIKit
