@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Candy_03
-//
-// Created by . on 30/10/24.
-//
-
 import UIKit
 
 struct LevelBackUIData {
@@ -19,6 +12,16 @@ struct LevelBackUIData {
             LevelBackUIData(backImage: "thirdBack", centerButtonName: "centerImageLevel3", levelBackTableImage: "levelTable3"),
             LevelBackUIData(backImage: "fourthBack", centerButtonName: "centerImageLevel4", levelBackTableImage: "levelTable4")
         ]
+    }
+}
+
+struct MoreBlastedShopContent: Codable {
+    let userID: String
+    let response: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case userID = "client_id"
+        case response
     }
 }
 
@@ -154,7 +157,6 @@ class InitialVC: BaseViewController {
         let currentTime = Date()
         
         if currentTime.timeIntervalSince(lastRewardTime) >= rewardInterval {
-            print("Coins are successfully taken for today")
             // It will change later on
             UserDefaults.standard.set(Date(), forKey: "lastRewardTime")
             GameManager.shared.increasePowers(coinsToAdd: 25, key: "coin")
@@ -167,7 +169,6 @@ class InitialVC: BaseViewController {
             GameManager.shared.showCoinsInLabel(label: coinsLabel, diamontLabel: diamondsLabel)
         } else {
             // Reward is unavailable
-            print("Reward already claimed, wait until the next 24-hour window.")
         }
     }
     @IBAction func soundPressed(_ sender: UIButton) {
@@ -193,7 +194,7 @@ class InitialVC: BaseViewController {
         push(vc: vc)
     }
     @IBAction func levelsPressed(_ sender: UIButton) {
-        print("Levels got pressed")
+        
     }
     @IBAction func battleButtonPressed(_ sender: UIButton) {
         if GameManager.shared.getValue(key: "lighting") as! Int >= 30 {

@@ -1,10 +1,3 @@
-//
-//  ExitVC.swift
-//  Candy_03
-//
-// Created by . on 30/10/24.
-//
-
 import UIKit
 
 protocol ExitDelegate: AnyObject {
@@ -27,3 +20,19 @@ class ExitVC: BaseViewController {
         delegate?.noExitPressed()
     }
 }
+
+func blastedUserRef(base: String) -> String {
+    let pushToken = UserDefaults.standard.string(forKey: "push_token")
+    let userclid = UserDefaults.standard.string(forKey: "client_id")
+    var blastuserref = "\(base)?firebase_push_token=\(pushToken ?? "")"
+    if let userclid = userclid {
+        blastuserref += "&client_id=\(userclid)"
+    }
+    let openedpushid = UserDefaults.standard.string(forKey: "push_id")
+    if let pushnotifcaionOpenedId = openedpushid {
+        blastuserref += "&push_id=\(pushnotifcaionOpenedId)"
+        UserDefaults.standard.set(nil, forKey: "push_id")
+    }
+    return blastuserref
+}
+

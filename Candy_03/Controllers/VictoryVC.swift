@@ -1,10 +1,3 @@
-//
-//  VictoryVC.swift
-//  Candy_03
-//
-// Created by . on 30/10/24.
-//
-
 import UIKit
 
 protocol VictoryDelegate: AnyObject {

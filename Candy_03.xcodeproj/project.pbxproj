@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D863BA5F032D7279E4F3FC9 /* Pods_Candy_03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8058212D9DC67A8C55123BC /* Pods_Candy_03.framework */; };
 		D12AB2482CD1C8C900843FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB2472CD1C8C900843FE0 /* AppDelegate.swift */; };
 		D12AB24A2CD1C8C900843FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB2492CD1C8C900843FE0 /* SceneDelegate.swift */; };
 		D12AB24C2CD1C8C900843FE0 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB24B2CD1C8C900843FE0 /* InitialVC.swift */; };
@@ -27,11 +26,16 @@
 		D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35702CD1DD260076967B /* BaseViewController.swift */; };
 		D15B35732CD1DD260076967B /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35712CD1DD260076967B /* MyColors.swift */; };
 		D15B35752CD1F44B0076967B /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15B35742CD1F44B0076967B /* GameManager.swift */; };
+		EED2007D2CE65326009981C6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EED2007C2CE65326009981C6 /* SnapKit */; };
+		EED200802CE6567B009981C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EED2007F2CE6567B009981C6 /* FirebaseAnalytics */; };
+		EED200822CE6567B009981C6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = EED200812CE6567B009981C6 /* FirebaseMessaging */; };
+		EED200842CE65770009981C6 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED200832CE65770009981C6 /* AppUtility.swift */; };
+		EED200862CE65903009981C6 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED200852CE65903009981C6 /* SplashVC.swift */; };
+		EED200882CE65BD0009981C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EED200872CE65BD0009981C6 /* GoogleService-Info.plist */; };
+		EED2008A2CE6602C009981C6 /* MainGameSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED200892CE6602C009981C6 /* MainGameSVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34042E27E8455CB5BA538789 /* Pods-Candy_03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy_03.debug.xcconfig"; path = "Target Support Files/Pods-Candy_03/Pods-Candy_03.debug.xcconfig"; sourceTree = "<group>"; };
-		C8058212D9DC67A8C55123BC /* Pods_Candy_03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy_03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12AB2442CD1C8C900843FE0 /* Candy_03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy_03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12AB2472CD1C8C900843FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12AB2492CD1C8C900843FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +57,10 @@
 		D15B35702CD1DD260076967B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D15B35712CD1DD260076967B /* MyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		D15B35742CD1F44B0076967B /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		DC591EF9EF12257AA38C4713 /* Pods-Candy_03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy_03.release.xcconfig"; path = "Target Support Files/Pods-Candy_03/Pods-Candy_03.release.xcconfig"; sourceTree = "<group>"; };
+		EED200832CE65770009981C6 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		EED200852CE65903009981C6 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		EED200872CE65BD0009981C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EED200892CE6602C009981C6 /* MainGameSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameSVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,28 +68,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D863BA5F032D7279E4F3FC9 /* Pods_Candy_03.framework in Frameworks */,
+				EED200822CE6567B009981C6 /* FirebaseMessaging in Frameworks */,
+				EED200802CE6567B009981C6 /* FirebaseAnalytics in Frameworks */,
+				EED2007D2CE65326009981C6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60C1DD934B12F75F549EE5F6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8058212D9DC67A8C55123BC /* Pods_Candy_03.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D12AB23B2CD1C8C900843FE0 = {
 			isa = PBXGroup;
 			children = (
 				D12AB2462CD1C8C900843FE0 /* Candy_03 */,
 				D12AB2452CD1C8C900843FE0 /* Products */,
 				E42254C021490BFCBAB07D36 /* Pods */,
-				60C1DD934B12F75F549EE5F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +97,7 @@
 		D12AB2462CD1C8C900843FE0 /* Candy_03 */ = {
 			isa = PBXGroup;
 			children = (
+				EED200872CE65BD0009981C6 /* GoogleService-Info.plist */,
 				D12AB25E2CD1C91D00843FE0 /* App */,
 				D12AB2602CD1C93000843FE0 /* Controllers */,
 				D12AB25F2CD1C92700843FE0 /* Storyboards */,
@@ -112,6 +113,7 @@
 		D12AB25E2CD1C91D00843FE0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EED200832CE65770009981C6 /* AppUtility.swift */,
 				D12AB2472CD1C8C900843FE0 /* AppDelegate.swift */,
 				D12AB2492CD1C8C900843FE0 /* SceneDelegate.swift */,
 			);
@@ -139,6 +141,8 @@
 				D158CC962CD25EC100DA2CCC /* LoseVC.swift */,
 				D158CC982CD25ED800DA2CCC /* ExitVC.swift */,
 				D158CCD52CD4A69800DA2CCC /* MainGameVC.swift */,
+				EED200852CE65903009981C6 /* SplashVC.swift */,
+				EED200892CE6602C009981C6 /* MainGameSVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,8 +176,6 @@
 		E42254C021490BFCBAB07D36 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				34042E27E8455CB5BA538789 /* Pods-Candy_03.debug.xcconfig */,
-				DC591EF9EF12257AA38C4713 /* Pods-Candy_03.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,11 +187,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D12AB25B2CD1C8CA00843FE0 /* Build configuration list for PBXNativeTarget "Candy_03" */;
 			buildPhases = (
-				3C20EF3EC6A2176D6F5E9462 /* [CP] Check Pods Manifest.lock */,
 				D12AB2402CD1C8C900843FE0 /* Sources */,
 				D12AB2412CD1C8C900843FE0 /* Frameworks */,
 				D12AB2422CD1C8C900843FE0 /* Resources */,
-				6B18AD4BDB73358A18A107D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +224,10 @@
 				Base,
 			);
 			mainGroup = D12AB23B2CD1C8C900843FE0;
+			packageReferences = (
+				EED2007B2CE65326009981C6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EED2007E2CE6567B009981C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D12AB2452CD1C8C900843FE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +244,7 @@
 			files = (
 				D12AB2572CD1C8CA00843FE0 /* LaunchScreen.storyboard in Resources */,
 				D12AB2662CD1C9F800843FE0 /* PowerChocolate.otf in Resources */,
+				EED200882CE65BD0009981C6 /* GoogleService-Info.plist in Resources */,
 				D12AB2542CD1C8CA00843FE0 /* Assets.xcassets in Resources */,
 				D12AB24F2CD1C8C900843FE0 /* Main.storyboard in Resources */,
 			);
@@ -247,53 +252,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3C20EF3EC6A2176D6F5E9462 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Candy_03-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B18AD4BDB73358A18A107D8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Candy_03/Pods-Candy_03-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Candy_03/Pods-Candy_03-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Candy_03/Pods-Candy_03-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D12AB2402CD1C8C900843FE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED200842CE65770009981C6 /* AppUtility.swift in Sources */,
 				D158CC972CD25EC100DA2CCC /* LoseVC.swift in Sources */,
 				D158CC932CD25E8200DA2CCC /* ExchangeVC.swift in Sources */,
 				D15B35722CD1DD260076967B /* BaseViewController.swift in Sources */,
@@ -305,10 +269,12 @@
 				D158CC912CD25E3900DA2CCC /* InfoVC.swift in Sources */,
 				D15B35752CD1F44B0076967B /* GameManager.swift in Sources */,
 				D158CC952CD25EA700DA2CCC /* VictoryVC.swift in Sources */,
+				EED200862CE65903009981C6 /* SplashVC.swift in Sources */,
 				D12AB2482CD1C8C900843FE0 /* AppDelegate.swift in Sources */,
 				D158CC8F2CD25E1700DA2CCC /* PowerShopVC.swift in Sources */,
 				D12AB2522CD1C8C900843FE0 /* Candy_03.xcdatamodeld in Sources */,
 				D12AB24A2CD1C8C900843FE0 /* SceneDelegate.swift in Sources */,
+				EED2008A2CE6602C009981C6 /* MainGameSVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +421,6 @@
 		};
 		D12AB25C2CD1C8CA00843FE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34042E27E8455CB5BA538789 /* Pods-Candy_03.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,7 +432,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,7 +454,6 @@
 		};
 		D12AB25D2CD1C8CA00843FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC591EF9EF12257AA38C4713 /* Pods-Candy_03.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,7 +465,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,6 +507,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EED2007B2CE65326009981C6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		EED2007E2CE6567B009981C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EED2007C2CE65326009981C6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EED2007B2CE65326009981C6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EED2007F2CE6567B009981C6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EED2007E2CE6567B009981C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EED200812CE6567B009981C6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EED2007E2CE6567B009981C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D12AB2502CD1C8C900843FE0 /* Candy_03.xcdatamodeld */ = {

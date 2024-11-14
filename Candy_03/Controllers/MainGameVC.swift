@@ -1,10 +1,3 @@
-//
-//  MainGameVC.swift
-//  Candy_03
-//
-// Created by . on 01/11/24.
-//
-
 import UIKit
 import SnapKit
 
@@ -109,7 +102,6 @@ class MainGameVC: BaseViewController {
             if index < imagesToSet.count {
                 btn.image = UIImage(named: "powerIcon\(imagesToSet[index])")
             } else {
-                print("Index out of bounds for imagesToSet array.")
             }
         }
     }
@@ -129,7 +121,6 @@ class MainGameVC: BaseViewController {
     }
     
     func startAnimation() {
-        print("Starting animation")
         stopAnimation()
         setupRandomImages()
         restart()

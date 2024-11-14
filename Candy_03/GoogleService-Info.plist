@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC2GXWdQDZ_BXVu-G62Ag6wDpF2WEj_v2c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>901435287922</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.behruznorov.Candy-03</string>
+	<key>PROJECT_ID</key>
+	<string>sweet-blast-73ead</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sweet-blast-73ead.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:901435287922:ios:6cb14b9fc234a4421b55eb</string>
+</dict>
+</plist>
